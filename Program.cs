@@ -18,6 +18,7 @@ namespace ProjectEuler
             ExecProblem5();
             ExecProblem6();
             ExecProblem7();
+            ExecProblem8();
 
             ExecProblem13();
             ExecProblem14();
@@ -103,6 +104,16 @@ namespace ProjectEuler
             Stopwatch s = Stopwatch.StartNew();
             int result = p7.GetPrimeNumberAt(index);
             Console.WriteLine($"PROBLEM 7: Prime number of index {index} is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
+        }
+
+        private static void ExecProblem8()
+        {
+            Problem08 p8 = new Problem08();
+            int adjacentDigits = 13;
+            Stopwatch s = Stopwatch.StartNew();
+            long result = p8.GetMaximumAdjacentDigitsProduct(adjacentDigits);
+            Console.WriteLine($"PROBLEM 8: Largest product of {adjacentDigits} adjacent digits is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
 
