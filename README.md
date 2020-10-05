@@ -11,5 +11,7 @@ Currently solved problems:
   
   * Problem 13: [Large sum](https://projecteuler.net/problem=13)
   * Problem 14: [Longest Collatz sequence](https://projecteuler.net/problem=14)
+
+  * Problem 18: [Maximum path sum I](https://projecteuler.net/problem=18)
   
   * Problem 24: [Lexicographic permutations](https://projecteuler.net/problem=24)

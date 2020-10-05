@@ -20,6 +20,8 @@ namespace ProjectEuler
             ExecProblem13();
             ExecProblem14();
 
+            ExecProblem18();
+
             ExecProblem20(); //Doesnt work yet.
 
             ExecProblem24();
@@ -106,6 +108,15 @@ namespace ProjectEuler
             Stopwatch s = Stopwatch.StartNew();
             int result = p14.GetLongestChainForCollatzSequence(upperLimit);
             Console.WriteLine($"PROBLEM 14: Starting number that produces the longest sequence is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
+        }
+
+        private static void ExecProblem18()
+        {
+            Problem18 p18 = new Problem18();
+            Stopwatch s = Stopwatch.StartNew();
+            int result = p18.GetMaxPathSum();
+            Console.WriteLine($"PROBLEM 18: Maximum sum of a triangle is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
 
