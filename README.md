@@ -8,6 +8,7 @@ Currently solved problems:
   * Problem 4: [Largest palindrome product](https://projecteuler.net/problem=4)
   * Problem 5: [Smallest multiple](https://projecteuler.net/problem=5)
   * Problem 6: [Sum square difference](https://projecteuler.net/problem=6)
+  * Problem 7: [10001st prime](https://projecteuler.net/problem=7)
   
   * Problem 13: [Large sum](https://projecteuler.net/problem=13)
   * Problem 14: [Longest Collatz sequence](https://projecteuler.net/problem=14)

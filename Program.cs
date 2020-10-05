@@ -17,6 +17,7 @@ namespace ProjectEuler
             ExecProblem4();
             ExecProblem5();
             ExecProblem6();
+            ExecProblem7();
 
             ExecProblem13();
             ExecProblem14();
@@ -92,6 +93,16 @@ namespace ProjectEuler
             Stopwatch s = Stopwatch.StartNew();
             long result = p6.GetSumSquareDifference(upperLimit);
             Console.WriteLine($"PROBLEM 6: Difference between sum of squares and the square of sum for first {upperLimit} numbers is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
+        }
+
+        private static void ExecProblem7()
+        {
+            Problem07 p7 = new Problem07();
+            int index = 10001;
+            Stopwatch s = Stopwatch.StartNew();
+            int result = p7.GetPrimeNumberAt(index);
+            Console.WriteLine($"PROBLEM 7: Prime number of index {index} is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
 
