@@ -22,6 +22,8 @@ namespace ProjectEuler
 
             ExecProblem20(); //Doesnt work yet.
 
+            ExecProblem24();
+
             Console.WriteLine("\nFinished with the execution.");
             Console.ReadKey();
         }
@@ -116,6 +118,16 @@ namespace ProjectEuler
             //int result = p20.GetFactorialSum(upperLimit);
             //Console.WriteLine($"PROBLEM 20: Sum of digits in the factorial of {upperLimit} is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             //s.Stop();
+        }
+
+        private static void ExecProblem24()
+        {
+            Problem24 p24 = new Problem24();
+            int elementAt = 1000000;
+            Stopwatch s = Stopwatch.StartNew();
+            long result = p24.GetLexiographicPermutationAtIndex(elementAt);
+            Console.WriteLine($"PROBLEM 24: Lexiographic permutation at index {elementAt} is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
         }
     }
 }

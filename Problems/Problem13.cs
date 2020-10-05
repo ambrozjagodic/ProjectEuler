@@ -8,6 +8,10 @@ namespace ProjectEuler.Problems
 {
     public class Problem13
     {
+        /// <summary>
+        /// Working solution to the Problem 13: Large sum
+        /// </summary>
+        /// <returns></returns>
         public string GetFirstTenDigitsOfSum()
         {
             IList<int> resultDigits = new List<int>();

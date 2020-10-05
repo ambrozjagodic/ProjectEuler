@@ -5,6 +5,11 @@ namespace ProjectEuler.Problems
 {
     public class Problem14
     {
+        /// <summary>
+        /// Working solution to the Problem 14: Longest Collatz sequence
+        /// </summary>
+        /// <param name="upperLimit"></param>
+        /// <returns></returns>
         public int GetLongestChainForCollatzSequence(int upperLimit)
         {
             IDictionary<long, int> knownLengths = new Dictionary<long, int>();
