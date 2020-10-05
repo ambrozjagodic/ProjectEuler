@@ -6,13 +6,18 @@ namespace ProjectEuler.Problems
 {
     public class Problem18
     {
-        public int GetMaxPathSum()
+        /// <summary>
+        /// Working solution to the Problem 18: Maximum path sum I
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        public int GetMaxPathSum(IList<IList<int>> numbers)
         {
             IList<int> nextRow = new List<int>();
-            for (int i = EulerConsts.PROBLEM_18_NUMBERS.Count - 1; i > 0; i--)
+            for (int i = numbers.Count - 1; i > 0; i--)
             {
-                IList<int> row = EulerConsts.PROBLEM_18_NUMBERS[i];
-                nextRow = EulerConsts.PROBLEM_18_NUMBERS[i - 1];
+                IList<int> row = numbers[i];
+                nextRow = numbers[i - 1];
 
                 for (int j = 0; j < row.Count - 1; j++)
                 {

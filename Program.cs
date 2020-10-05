@@ -1,4 +1,5 @@
-﻿using ProjectEuler.Problems;
+﻿using ProjectEuler.Core;
+using ProjectEuler.Problems;
 using System;
 using System.Diagnostics;
 
@@ -25,6 +26,8 @@ namespace ProjectEuler
             ExecProblem20(); //Doesnt work yet.
 
             ExecProblem24();
+
+            ExecProblem67();
 
             Console.WriteLine("\nFinished with the execution.");
             Console.ReadKey();
@@ -115,7 +118,7 @@ namespace ProjectEuler
         {
             Problem18 p18 = new Problem18();
             Stopwatch s = Stopwatch.StartNew();
-            int result = p18.GetMaxPathSum();
+            int result = p18.GetMaxPathSum(EulerConsts.PROBLEM_18_NUMBERS);
             Console.WriteLine($"PROBLEM 18: Maximum sum of a triangle is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
@@ -138,6 +141,15 @@ namespace ProjectEuler
             Stopwatch s = Stopwatch.StartNew();
             long result = p24.GetLexiographicPermutationAtIndex(elementAt);
             Console.WriteLine($"PROBLEM 24: Lexiographic permutation at index {elementAt} is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
+        }
+
+        private static void ExecProblem67()
+        {
+            Problem67 p67 = new Problem67();
+            Stopwatch s = Stopwatch.StartNew();
+            int result = p67.GetMaxPathSum();
+            Console.WriteLine($"PROBLEM 67: Maximum sum of a triangle is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
     }

@@ -15,3 +15,5 @@ Currently solved problems:
   * Problem 18: [Maximum path sum I](https://projecteuler.net/problem=18)
   
   * Problem 24: [Lexicographic permutations](https://projecteuler.net/problem=24)
+
+  * Problem 67: [Maximum path sum II](https://projecteuler.net/problem=67)
