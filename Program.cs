@@ -19,6 +19,7 @@ namespace ProjectEuler
             ExecProblem6();
             ExecProblem7();
             ExecProblem8();
+            ExecProblem9();
 
             ExecProblem13();
             ExecProblem14();
@@ -114,6 +115,15 @@ namespace ProjectEuler
             Stopwatch s = Stopwatch.StartNew();
             long result = p8.GetMaximumAdjacentDigitsProduct(adjacentDigits);
             Console.WriteLine($"PROBLEM 8: Largest product of {adjacentDigits} adjacent digits is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
+            s.Stop();
+        }
+
+        private static void ExecProblem9()
+        {
+            Problem09 p9 = new Problem09();
+            Stopwatch s = Stopwatch.StartNew();
+            int result = p9.GetProductOfPythagoreanTriplet();
+            Console.WriteLine($"PROBLEM 9: Product of Pythagorean triplet is {result}. Took {s.ElapsedTicks} ticks or {s.ElapsedMilliseconds} ms or {s.Elapsed.Seconds} s to execute.");
             s.Stop();
         }
 
